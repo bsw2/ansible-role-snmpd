@@ -1,19 +1,16 @@
-Ansible Role: SNMPD
-===================
+snmpd
+=====
 
 Installs and configures snmpd.
 
 ### Documentation
 
-This is a fork of `debops.snmpd`. This is the same role, without all the
-dependencies.
-
-More information about `debops.snmpd` can be found in the
-[official debops.snmpd documentation](http://docs.debops.org/en/latest/ansible/roles/ansible-snmpd/docs/).
+This is based on `debops.snmpd` with a lot of changes.
 
 ### Authors and license
 
 `snmpd` role was written by:
+- TRINAPS, Johan Fleury | [e-mail](mailto:johan.fleury@trinaps.com)
 - TRINAPS, Anthony Ruhier | [e-mail](mailto:anthony.ruhier@trinaps.com)
 - Maciej Delmanowski | [e-mail](mailto:drybjed@gmail.com) | [Twitter](https://twitter.com/drybjed) | [GitHub](https://github.com/drybjed)
 
