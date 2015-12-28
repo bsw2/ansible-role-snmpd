@@ -2,15 +2,12 @@
 
 galaxy_info:
   author: 'Anthony Ruhier'
-  description: 'Install and configure SNMP service'
-  company: 'TRINAPS'
+  description: 'Install and configure SNMP service on ArchLinux'
+  company: ''
   license: 'GPLv3'
   min_ansible_version: '1.8.0'
   platforms:
-  - name: Debian
-    versions:
-    - wheezy
-    - jessie
+  - name: ArchLinux
   categories:
   - system
   - networking

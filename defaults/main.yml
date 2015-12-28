@@ -1,6 +1,7 @@
 ---
 
-snmpd_packages: []
+snmpd_packages:
+    - net-snmp
 
 snmpd_logging_options: "-Lsd"
 
@@ -16,5 +17,5 @@ snmpd_custom_options: ""
 #   LLDP daemon
 # ---------------
 
-snmpd_lldpd: True
+snmpd_lldpd: False
 snmpd_lldpd_options: "-x -c -s -e"

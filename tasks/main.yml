@@ -1,21 +1,10 @@
 ---
 
-- name: Check if snmpd is installed
-  environment:
-    LC_MESSAGES: 'C'
-  command: dpkg-query -W -f='${Version}\n' snmpd
-  register: snmpd_register_version
-  changed_when: False
-  failed_when: False
-
 - name: Install required packages
-  apt:
-    name: '{{ item }}'
-    state: 'present'
-    install_recommends: False
+  pacman:
+    name: "{{ item }}"
+    state: "present"
   with_flattened:
-    - [ 'snmp', 'snmpd' ]
-    - [ '{{ "lldpd" if snmpd_lldpd else [] }}' ]
     - snmpd_packages
 
 - name: Configure lldpd daemon variables
@@ -27,6 +16,9 @@
     mode: '0644'
   notify: [ 'Restart lldpd' ]
   when: snmpd_lldpd is defined and snmpd_lldpd
+
+- name: Check if /etc/snmp/ exists
+  file: path=/etc/snmp state=directory
 
 - name: Configure snmpd daemon variables
   template:

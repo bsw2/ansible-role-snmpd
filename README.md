@@ -1,7 +1,7 @@
 snmpd
 =====
 
-Installs and configures snmpd.
+Installs and configures snmpd on ArchLinux.
 
 ### Documentation
 
