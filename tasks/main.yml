@@ -37,3 +37,14 @@
     group: 'root'
     mode: '0600'
   notify: [ 'Restart snmpd' ]
+
+- name: Enable snmpd
+  service:
+    name: "snmpd"
+    enabled: yes
+
+- name: Enable lldpd
+  service:
+    name: "lldpd"
+    enabled: yes
+  when: snmpd_lldpd is defined and snmpd_lldpd
