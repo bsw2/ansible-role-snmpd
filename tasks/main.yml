@@ -5,7 +5,7 @@
     name: "{{ item }}"
     state: "present"
   with_flattened:
-    - snmpd_packages
+    - "{{ snmpd_packages }}"
 
 - name: Configure lldpd daemon variables
   template:
