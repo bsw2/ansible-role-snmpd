@@ -1,5 +1,7 @@
-snmpd
-=====
+Ansible Role: SNMPD
+===================
+
+[![Build Status](https://travis-ci.org/Anthony25/ansible-role-snmpd.svg?branch=master)](https://travis-ci.org/Anthony25/ansible-role-snmpd)
 
 Installs and configures snmpd.
 

@@ -3,7 +3,7 @@
 - name: Restart snmpd
   service:
     name: 'snmpd'
-    enabled: True
+    enabled: true
     state: 'restarted'
 
 - name: Restart lldpd
@@ -11,3 +11,4 @@
     name: 'lldpd'
     state: 'restarted'
 
+# vim: set ts=2 sw=2:

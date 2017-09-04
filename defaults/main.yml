@@ -5,7 +5,9 @@ snmpd_packages:
 
 snmpd_logging_options: "-Lsd"
 
-snmpd_agent_address: [ "udp:0.0.0.0:161", "udp6:[::]:161" ]
+snmpd_agent_address:
+  - "udp:0.0.0.0:161"
+  - "udp6:[::]:161"
 
 snmpd_sys_location: "Sitting on the Dock of the Bay"
 snmpd_sys_contact: "Me <me@example.org>"
@@ -17,5 +19,7 @@ snmpd_custom_options: ""
 #   LLDP daemon
 # ---------------
 
-snmpd_lldpd: False
+snmpd_lldpd: false
 snmpd_lldpd_options: "-x -c -s -e"
+
+# vim: set ts=2 sw=2:
