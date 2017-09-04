@@ -1,7 +1,7 @@
 ---
 
 snmpd_packages:
-    - net-snmp
+  - net-snmp
 
 snmpd_logging_options: "-Lsd"
 
