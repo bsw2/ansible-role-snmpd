@@ -1,8 +1,5 @@
 ---
 
-snmpd_packages:
-  - net-snmp
-
 snmpd_logging_options: "-Lsd"
 
 snmpd_agent_address:
