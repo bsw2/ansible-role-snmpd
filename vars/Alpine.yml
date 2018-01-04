@@ -1,0 +1,7 @@
+---
+
+snmpd_packages:
+  - net-snmp
+  - net-snmp-tools
+
+# vim: set ts=2 sw=2:
