@@ -2,6 +2,10 @@
 
 agentAddress  {{ snmpd_agent_address | join(",") }}
 
+{% if snmpd_community_string is defined %}
+rocommunity {{ snmpd_community_string }}  default
+{% endif %}
+
 {% if snmpd_sys_name is defined %}
 sysName       {{ snmpd_sys_name }}
 {% endif %}
