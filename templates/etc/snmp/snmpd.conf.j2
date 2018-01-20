@@ -1,6 +1,8 @@
 # {{ ansible_managed }}
 
-agentAddress  {{ snmpd_agent_address | join(",") }}
+{% for address in snmpd_agent_address %}
+agentAddress  {{ address }}
+{% endfor %}
 
 {% if snmpd_community_string is defined %}
 rocommunity {{ snmpd_community_string }}  default
